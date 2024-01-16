@@ -23,8 +23,8 @@ function Counter() {
         <button onClick={() => dispatch(decrement())} className='btn btn-danger ms-2 mt-5'>DECREMENT</button>
         <button onClick={() => dispatch(reset())} className='btn btn-info ms-2 mt-5'>RESET</button>
       </div>
-      <div className='text-center bg-light container p-5 my-5 container w-50 shadow-lg'>
-        <input onChange={e=>setAmount(e.target.value)} value={amount||""} type="text" className='form-control bg-dark ' placeholder='enter the amount to be incremented' />
+      <div className='text-center bg-dark container p-5 my-5 container w-50 shadow-lg'>
+        <input onChange={e=>setAmount(e.target.value)} value={amount||""} type="text" className='form-control bg-light ' placeholder='enter the amount to be incremented' />
         <button onClick={handleIncrement} className='btn btn-primary ms-3'>Increment by Amount</button>
       </div>
     </div>
